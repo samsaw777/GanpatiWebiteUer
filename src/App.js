@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
+import {Switch, Route} from 'react-router-dom'
+import AboutUs from './Website/AboutUs'
+import {AuthProvider} from './context/Authcontext'
+import ShaduGanpati from './Website/ShaduGanpati'
+import PaperGanpati from './Website/PaperGanpati'
+import RedGanpati from './Website/RedSoil'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Switch>
+        <Route exact path='/' component={AboutUs}/>
+        <Route exact path='/shaduganpati' component={ShaduGanpati}/>
+  <Route exact path='/paperganpati' component={PaperGanpati}/>
+  <Route exact path='/redganpati' component={RedGanpati}/>
+      </Switch>
+    </AuthProvider>
   );
 }
 

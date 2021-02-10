@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+    background-color: #1a1919;
+}
+
+li{
+    list-style: none;
+    color: #fff;
+}
+
+li:hover{
+    color: orange;
+    font-weight: 700;
+}
+
+.logo{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav .navigation-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+}
+
+a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: 700;
+    color: orange;
+    text-decoration: none; 
+}
+
+.active{
+    color: orange;
+    font-weight: 900;
+}
+
+.burger{
+    color: #ffffff;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.login{
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+}
+
+.login:hover{
+    color: orange;
+    background-color: #fff;
+}
+
+.welcomeuser{
+    align-items: center;
+    font-size: 18px;
+}
+
+.chalbyee{
+    display: none;
+}
+
+.inclass{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width:768px){
+    .burger{
+        display: block;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    nav .navigation-links{
+        display: block;
+        position: absolute;
+        top:75px;
+        left: 0;
+        transform: translateX(-900px);
+        padding: 20px;
+        background-color: #1a1919;
+        color: #fff;
+        width: 100%;
+        transition: 0.5s ease-in-out;
+        z-index: 1;
+    }
+
+    li{
+        padding:20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    li:last-of-type{
+        border-bottom: 0px solid #fff;
+    }
+
+    .chalbyee{
+        display: block;
+    }
+
+    .inclass{
+        display: none;
+    }
+}
+
+
+/*
+12345
+shushantjoshiarts@gmail.com
+12345
+shushantjoshiarts@gmail.com
+
+*/
