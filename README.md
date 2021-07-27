@@ -13,5 +13,5 @@ Ganpati Booking App for a Client.
 
 ![image](https://user-images.githubusercontent.com/52825565/127171544-75c922d3-7543-4e30-a8b7-a849dab7bf23.png)
 
-![image](https://user-images.githubusercontent.com/52825565/127171563-6e7f15ef-5e03-4877-81c3-6d4b8c763d25.png)
+![image](https://user-images.githubusercontent.com/52825565/127171642-59aef999-26b0-477c-93d5-a369c340fb42.png)
 
